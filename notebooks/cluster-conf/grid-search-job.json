@@ -1,0 +1,36 @@
+{
+    "libraries": [
+        {
+            "pypi": {
+                "package": "mmh3==2.5.1"
+            }
+        }
+    ],
+    "name": "Grid search",
+    "new_cluster": {
+        "enable_elastic_disk": true,
+        "node_type_id": "Standard_E8s_v3",
+        "num_workers": 15,
+        "spark_conf": {
+            "spark.default.parallelism": "470",
+            "spark.driver.cores": "5",
+            "spark.driver.maxResultSize": "8g",
+            "spark.driver.memory": "28g",
+            "spark.dynamicAllocation.enabled": "false",
+            "spark.executor.cores": "5",
+            "spark.executor.instances": "47",
+            "spark.executor.memory": "28g",
+            "spark.kryoserializer.buffer": "64m",
+            "spark.kryoserializer.buffer.max": "1024m",
+            "spark.python.worker.memory": "8g",
+            "spark.serializer": "org.apache.spark.serializer.KryoSerializer"
+        },
+        "spark_env_vars": {
+            "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+        },
+        "spark_version": "5.2.x-scala2.11"
+    },
+    "notebook_task": {
+        "notebook_path": "/Shared/04-modeling"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "autoscale": {
+        "max_workers": 4,
+        "min_workers": 1
+    },
+    "autotermination_minutes": 60,
+    "cluster_name": "dev",
+    "driver_node_type_id": "Standard_E8s_v3",
+    "enable_elastic_disk": true,
+    "node_type_id": "Standard_E8s_v3",
+    "spark_env_vars": {
+        "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+    },
+    "spark_version": "5.2.x-scala2.11"
+}
