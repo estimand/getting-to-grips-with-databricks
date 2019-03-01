@@ -226,7 +226,7 @@ featurizedAll = (featurizationPipeline.fit(all_)
 
 lr = LinearRegression(**bestParams)
 
-model = lr.fit(all_)
+model = lr.fit(featurizedAll)
 
 # COMMAND ----------
 
